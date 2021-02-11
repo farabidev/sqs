@@ -5,10 +5,16 @@
     "keywords": ["messaging", "queue", "amazon", "aws", "sqs"],
     "homepage": "https://enqueue.forma-pro.com/",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/farabidev/dsn"
+        }
+    ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.3 || ^8.0",
         "queue-interop/queue-interop": "^0.8",
-        "enqueue/dsn": "^0.10",
+        "enqueue/dsn": "dev-feature/php-8 as 0.10",
         "aws/aws-sdk-php": "~3.26"
     },
     "require-dev": {
